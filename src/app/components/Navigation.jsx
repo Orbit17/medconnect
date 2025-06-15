@@ -1,12 +1,10 @@
 // components/Navigation.js
 'use client';
 import Link from 'next/link';
-import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
 export default function Navigation() {
   const pathname = usePathname();
-
   const isActive = (path) => pathname === path;
 
   return (
@@ -21,12 +19,18 @@ export default function Navigation() {
         <nav className="nav-section">
           <ul className="navbar">
             <li>
-              <Link href="/about" className={isActive('/about') ? 'nav-link active' : 'nav-link'}>
+              <Link
+                href="/about"
+                className={isActive('/about') ? 'nav-link active' : 'nav-link'} style={{padding: 20}}
+              >
                 About
               </Link>
             </li>
             <li>
-              <Link href="/contact" className={isActive('/contact') ? 'nav-link active' : 'nav-link'}>
+              <Link
+                href="/contact"
+                className={isActive('/contact') ? 'nav-link active' : 'nav-link'} style={{padding: 20}}
+              >
                 Contact
               </Link>
             </li>
@@ -36,13 +40,12 @@ export default function Navigation() {
 
       <style jsx>{`
         .navigation-header {
-          background: rgba(255, 255, 255, 0.95);
-          backdrop-filter: blur(10px);
-          border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+          background-color: #0f172a;
+          border-bottom: 1px solid #1e293b;
           position: sticky;
           top: 0;
           z-index: 100;
-          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
         }
 
         .nav-container {
@@ -60,8 +63,8 @@ export default function Navigation() {
         }
 
         .nav-section {
-            color: black;
           justify-self: end;
+          margin-left: auto;
         }
 
         .logo-placeholder {
@@ -71,57 +74,45 @@ export default function Navigation() {
         }
 
         .logo-text {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 1.75rem;
-            font-weight: 700;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+          font-size: 1.75rem;
+          font-weight: 700;
+          background: linear-gradient(135deg, #7f5af0 0%, #00f2fe 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
         }
 
         .navbar {
           display: flex;
           list-style: none;
-          gap: 0.5rem;
+          gap: 1rem;
           margin-left: auto;
           padding: 0;
         }
 
         .nav-link {
           text-decoration: none;
-          color: #1e293b;
+          color: #e2e8f0;
           font-weight: 600;
           padding: 0.75rem 1.25rem;
           border-radius: 0.75rem;
-          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-          position: relative;
+          transition: all 0.3s ease;
           font-size: 0.95rem;
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
         }
 
         .nav-link:hover {
-          color: #475569;
-          background-color: rgba(248, 250, 252, 0.8);
-          transform: translateY(-1px);
-          -webkit-text-fill-color: #475569;
+          background-color: #1e293b;
+          color: #ffffff;
         }
 
         .nav-link.active {
+          background-color: #7f5af0;
           color: #ffffff;
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-          -webkit-text-fill-color: #ffffff;
-          box-shadow: 0 4px 14px 0 rgba(102, 126, 234, 0.3);
+          box-shadow: 0 4px 14px 0 rgba(127, 90, 240, 0.4);
         }
 
         .nav-link.active:hover {
-          transform: translateY(-1px);
-          box-shadow: 0 6px 20px 0 rgba(102, 126, 234, 0.4);
+          background-color: #6842f4;
         }
 
         @media (max-width: 768px) {
@@ -138,10 +129,12 @@ export default function Navigation() {
 
           .nav-section {
             justify-self: center;
+            margin-left: 0;
           }
 
           .navbar {
-            gap: 0.25rem;
+            gap: 0.5rem;
+            margin-left: 0;
           }
 
           .nav-link {
