@@ -59,65 +59,27 @@ export default function About() {
             <h2 className="text-3xl font-bold mb-12 text-center bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
               Why Choose MedConnect
             </h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="p-8 bg-white/80 backdrop-blur-sm rounded-2xl border border-slate-200 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                <div className="flex justify-center mb-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center">
-                    <span className="text-white text-2xl">🔍</span>
+            <div className="flex justify-center">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl">
+                <div className="p-8 bg-white/80 backdrop-blur-sm rounded-2xl border border-slate-200 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                  <div className="flex justify-center mb-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center">
+                      <span className="text-white text-2xl">🔍</span>
+                    </div>
                   </div>
+                  <h3 className="text-xl font-bold mb-3 text-slate-800 text-center">Smart Search</h3>
+                  <p className="text-slate-600 text-center">Powerful matching based on your specific healthcare needs</p>
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-slate-800 text-center">Smart Search</h3>
-                <p className="text-slate-600 text-center">Powerful matching based on your specific healthcare needs</p>
-              </div>
 
-              {/* <div className="p-8 bg-white/80 backdrop-blur-sm rounded-2xl border border-slate-200 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                <div className="flex justify-center mb-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center">
-                    <span className="text-white text-2xl">📍</span>
+                <div className="p-8 bg-white/80 backdrop-blur-sm rounded-2xl border border-slate-200 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                  <div className="flex justify-center mb-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-teal-500 to-cyan-600 rounded-xl flex items-center justify-center">
+                      <span className="text-white text-2xl">🤝</span>
+                    </div>
                   </div>
+                  <h3 className="text-xl font-bold mb-3 text-slate-800 text-center">Trusted Network</h3>
+                  <p className="text-slate-600 text-center">Qualified healthcare professionals that we incorporate in our system</p>
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-slate-800 text-center">Location-Based</h3>
-                <p className="text-slate-600 text-center">Find qualified doctors and specialists near you</p>
-              </div>
-
-              <div className="p-8 bg-white/80 backdrop-blur-sm rounded-2xl border border-slate-200 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                <div className="flex justify-center mb-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-violet-600 rounded-xl flex items-center justify-center">
-                    <span className="text-white text-2xl">💰</span>
-                  </div>
-                </div>
-                <h3 className="text-xl font-bold mb-3 text-slate-800 text-center">Insurance Friendly</h3>
-                <p className="text-slate-600 text-center">Filter results by insurance acceptance and coverage</p>
-              </div>
-
-              <div className="p-8 bg-white/80 backdrop-blur-sm rounded-2xl border border-slate-200 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                <div className="flex justify-center mb-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-600 rounded-xl flex items-center justify-center">
-                    <span className="text-white text-2xl">⭐</span>
-                  </div>
-                </div>
-                <h3 className="text-xl font-bold mb-3 text-slate-800 text-center">Verified Reviews</h3>
-                <p className="text-slate-600 text-center">Read authentic patient reviews and ratings</p>
-              </div>
-
-              <div className="p-8 bg-white/80 backdrop-blur-sm rounded-2xl border border-slate-200 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                <div className="flex justify-center mb-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-yellow-500 to-orange-600 rounded-xl flex items-center justify-center">
-                    <span className="text-white text-2xl">⚡</span>
-                  </div>
-                </div>
-                <h3 className="text-xl font-bold mb-3 text-slate-800 text-center">Quick Booking</h3>
-                <p className="text-slate-600 text-center">Easy appointment scheduling directly through our platform</p>
-              </div> */}
-
-              <div className="p-8 bg-white/80 backdrop-blur-sm rounded-2xl border border-slate-200 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                <div className="flex justify-center mb-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-teal-500 to-cyan-600 rounded-xl flex items-center justify-center">
-                    <span className="text-white text-2xl">🤝</span>
-                  </div>
-                </div>
-                <h3 className="text-xl font-bold mb-3 text-slate-800 text-center">Trusted Network</h3>
-                <p className="text-slate-600 text-center">Qualified healthcare professionals that we incorporate in our system</p>
               </div>
             </div>
           </section>
